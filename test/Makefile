@@ -1,0 +1,2 @@
+CFLAGS+=-lcrypto
+CXXFLAGS+=-lcrypto
