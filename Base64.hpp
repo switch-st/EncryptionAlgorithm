@@ -74,13 +74,13 @@ public:
 		{
 			return -1;
 		}
-		if (m_pPlainText)
+		if (m_pCipherText)
 		{
-			free(m_pPlainText);
+			free(m_pCipherText);
 		}
-		m_pPlainText = (unsigned char*)malloc(len);
-		memcpy(m_pPlainText, pData, len);
-		m_lPlanLen = len;
+		m_pCipherText = (unsigned char*)malloc(len);
+		memcpy(m_pCipherText, pData, len);
+		m_lCipherLen = len;
 
 		return 0;
 	}
